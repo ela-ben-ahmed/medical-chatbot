@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatboot Medical - Symptomes</title>
+    <link rel="stylesheet" href="stylee.css" />
+  </head>
+  <body>
+    <main class="chat">
+      <header class="chat-header">
+        <h1>Chatboot Medical - Assistance Symptomes</h1>
+        <p>
+          Bonjour ! Decris tes symptomes et je te guide avec des conseils generaux.
+        </p>
+      </header>
+
+      <section id="messages" class="chat-messages"></section>
+
+      <div class="quick-actions">
+        <button class="quick-btn" data-question="J'ai de la fievre et un mal de tete, que faire ?">
+          Fievre + mal de tete
+        </button>
+        <button class="quick-btn" data-question="J'ai une toux seche depuis 3 jours.">
+          Toux seche
+        </button>
+        <button class="quick-btn" data-question="Quand faut-il consulter en urgence ?">
+          Signes d'urgence
+        </button>
+      </div>
+
+      <form id="messageArea" class="chat-form">
+        <input
+          type="text"
+          id="text"
+          name="msg"
+          placeholder="Ex: J'ai mal a la gorge et de la fatigue..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Envoyer</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
